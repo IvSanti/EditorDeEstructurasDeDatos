@@ -1,17 +1,15 @@
-package uniquindio.listas;
-
+package uniquindio.listas.cola;
 
 public class Nodo<T> {
 
-	private T dato;// tipo de datos
-	private Nodo<T> siguiente;// tipo de el encale
-	private Nodo<T> anterior;
-
+	private T dato;//tipo de datos
+	private Nodo<T> siguiente;//tipo de el encale
+	
 	public Nodo(T dato) {
-
-		this.dato = dato;
-		siguiente = null;
-
+		
+		this.dato=dato;
+		siguiente=null;
+		
 	}
 
 	/**
@@ -29,32 +27,19 @@ public class Nodo<T> {
 	}
 
 	/**
-	 * @return the siguiente
+	 * @return the enlace
 	 */
 	public Nodo<T> getSiguiente() {
 		return siguiente;
 	}
 
 	/**
-	 * @param siguiente the siguiente to set
+	 * @param enlace the enlace to set
 	 */
-	public void setSiguiente(Nodo<T> siguiente) {
-		this.siguiente = siguiente;
+	public void setSiguiente(Nodo<T> enlace) {
+		this.siguiente = enlace;
 	}
 
-	/**
-	 * @return the anterior
-	 */
-	public Nodo<T> getAnterior() {
-		return anterior;
-	}
-
-	/**
-	 * @param anterior the anterior to set
-	 */
-	public void setAnterior(Nodo<T> anterior) {
-		this.anterior = anterior;
-	}
 	
 	
 }
